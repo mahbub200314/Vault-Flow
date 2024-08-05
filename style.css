@@ -59,10 +59,10 @@ nav{
     display: flex;
     text-align: center;
     justify-content: space-between;
-    height: 60px;
+    height: 70px;
     
 
-    padding:15px 35px;
+    padding:18px 35px;
     font-family: "Montserrat", sans-serif;
     
 }
@@ -101,7 +101,7 @@ ul li a{
 #expert a{
     border:1px solid #fff;
 
-    padding:5px 25px;
+    padding:10px 25px;
     border-radius: 30px;
 
 }
@@ -109,10 +109,10 @@ ul li a{
 #download a{
     border:1px solid #fff;
 
-    padding:5px 25px;
+    padding:10px 25px;
     border-radius: 30px;
     color:black;
-    background-color: #efd4d4;
+    background-color: #fff;
 }
 
 #download a:hover{
@@ -390,6 +390,7 @@ font-size: 12px;
     color:#fff;
     padding-top:45px;
     width: 100%;
+       padding-top: 100px;
   }
 
   .others img{
@@ -409,7 +410,10 @@ font-size: 12px;
     margin-bottom: 40px;
   }
 
- 
+ .headline h2{
+     font-size:35px;
+     font-weight:400;
+ }
 
 .cards{
     display: flex;
