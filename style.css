@@ -441,7 +441,8 @@ font-size: 12px;
   }
 .card img{
     
-    margin-left:-12px
+    margin-left:-12px;
+    width:120px;
 }
 
 
@@ -481,7 +482,7 @@ font-size: 12px;
 
 .cardd img{
     
-    margin-left:-12px
+    margin-left:-12px;
      width:120px;
     
 }
