@@ -1,0 +1,739 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+
+    font-family:  "Montserrat", sans-serif;;
+
+}
+
+
+
+
+
+.herosection{
+   
+    background: url(Hero\ Stack1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height:100vh ;
+    width: 100%;
+    
+    
+    position: relative;
+    border:1px solid transparent rgb(2, 2, 22);
+    
+        
+    
+    }
+
+
+
+/*********   nav bar start ****/
+/*********   nav bar start ****/
+.logo{
+    
+    
+    font-weight: bold;
+    font-size: 20px;
+    color:#fff;
+    font-family: "Montserrat", sans-serif;
+}
+.logo img{
+    width: 15px;
+}
+nav{
+
+    background: url(Navbar.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+
+   
+    
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    height: 60px;
+    
+
+    padding:15px 35px;
+    font-family: "Montserrat", sans-serif;
+    
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    margin-top: 5px;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:#fff;
+
+
+
+}
+
+.menuicon{
+    display: none;
+}
+
+
+
+
+
+ul li a{
+    position: relative;
+    overflow: hidden;
+    z-index: +1;
+
+    margin:10px 15px
+}
+
+#expert a{
+    border:1px solid #fff;
+
+    padding:5px 25px;
+    border-radius: 30px;
+
+}
+
+#download a{
+    border:1px solid #fff;
+
+    padding:5px 25px;
+    border-radius: 30px;
+    color:black;
+    background-color: #efd4d4;
+}
+
+#download a:hover{
+    background-color: #a7a2a2;
+    border:1px transparent;
+}
+
+#expert{
+    margin-right: -15px;
+    margin-left:15px;
+}
+
+#expert a:hover{
+    background-color: #a7a2a2;
+    border:1px transparent;
+}
+
+
+
+
+  
+/******************* nav responsive **************/
+
+
+
+
+@media(max-width:990px){
+    
+    nav{
+        padding:15px;
+    }
+    nav ul{
+        padding:0px;
+        position: absolute;
+        top:50px;
+        left:0px;
+        right:0px;
+        
+        flex-direction: column;
+        gap:0px;
+        background:linear-gradient(135deg, rgba(255,255,255,0.1)rgba(255,255,0));
+
+        backdrop-filter:blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+
+        overflow: hidden;
+        z-index: 1;
+        
+    }
+    nav ul li{
+        padding:15px;
+        border:2px solid;
+        cursor: pointer;
+    }
+
+    nav ul li:hover{
+        background-color: gray;
+    }
+
+
+    nav ul li a{
+        font-size: 20px;
+    }
+    .menuicon{
+        display: block;
+        color:white;
+        
+    }
+    
+    #menulist{
+        transition: all 0.5s;
+    }
+    
+   #expert a{
+    border:none
+   }
+
+   #expert{
+    
+    margin-left:-15px;
+}
+
+
+#expert a:hover{
+    border:none;
+    background-color: transparent;
+}
+
+   #download a{
+    background-color: transparent;
+    border-radius: none;
+    border: none;
+    color:#fff;
+   }
+
+
+   #download a:hover{
+    border: none;
+    border-radius: none;
+    background-color: transparent;
+   }
+
+
+}
+
+
+
+
+/*********   nav bar end ****/
+/*********   nav bar end
+
+
+
+/***************hero section content*************/
+
+
+
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    color:#fff;
+
+    margin-top: 7% ;
+    margin-left:5%;
+    margin-right:5%;
+    
+
+
+}
+
+
+.content p1 {
+border: 0.1px solid #fff;
+border-radius: 30px;
+padding:8px 18px;
+opacity: 0.5;
+
+font-family: "Montserrat", sans-serif;
+font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.content h1{
+
+
+    font-size: 4vw;
+    font-family: "Montserrat", sans-serif;
+    font-size: 4rem ;
+    margin-top: 13px;
+    line-height: 65px;
+    letter-spacing: 1.2px;
+    word-spacing: 2px;
+    font-weight: light;
+    opacity: 0.8;
+    
+}
+.content span{
+    opacity: 0.7;
+}
+
+.content p{
+    font-family: "Montserrat", sans-serif;
+    opacity: 0.5;
+    font-size:12px;
+    
+    letter-spacing: 1px;
+    margin-top: 15px;
+    margin-bottom:25px;
+   
+    
+}
+
+.button1{
+ 
+    padding:10px 25px;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.button2{
+ 
+    padding:10px 35px;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    background-color: transparent;
+    color:#fff;
+    margin-left:10px;
+    cursor: pointer;
+    
+}
+
+.button2:hover{
+    background-color: white;
+    color:black;
+    transition: 0.5s;
+
+
+
+}
+@media(max-width:460px){
+
+    .buttonbox{
+          display: flex;
+          flex-direction: column;
+    }
+
+    .button2{
+        margin-left:0px;
+    }
+}
+.dashbord{
+    text-align: center;
+    
+}
+
+.dashbord img{
+    width: 55%;
+    
+
+}
+@media(max-width:984px){
+   .dashbord img{
+    width: 700px;
+   }
+}
+
+
+
+@media(max-width:700px){
+    .dashbord img{
+     width: 600px;
+    }
+ }
+
+ @media(max-width:600px){
+    .dashbord img{
+     width: 500px;
+    }
+ }
+
+ @media(max-width:490px){
+    .dashbord img{
+    width: 400px;
+    }
+ }
+
+ @media(max-width:397px){
+    .dashbord img{
+    width: 300px;
+    }
+ }
+
+
+
+
+
+
+  /***************others start****************/
+
+
+  .others{
+    min-height: 100vh;
+    background: url(others.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border:1px solid rgb(2, 2, 38);
+    text-align: center;
+    color:#fff;
+    padding-top:45px;
+    width: 100%;
+  }
+
+  .others img{
+    margin:6px 3%;
+    
+  }
+
+.twopage{
+    margin-top:90px;
+    
+
+    text-align: center;
+}
+  .headline{
+    text-align: center;
+
+    margin-bottom: 40px;
+  }
+
+ 
+
+.cards{
+    display: flex;
+    width: 100%;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    gap:5%;
+    
+}
+  .card{
+    border:2px solid transparent;
+    box-shadow: #fff -2px -2px 10px -4px;
+    margin:10px;
+    width: 550px;
+    padding: 20px 50px;
+    border-radius:20px;
+    
+   
+    align-items: start;
+    justify-content: left;
+
+    
+  }
+.card img{
+    
+    margin-left:-12px
+}
+
+
+.card a{
+    color:#fff;
+}
+
+.thirdcard{
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    margin-top:50px;
+}
+.card h3{
+    margin-bottom:8px
+}
+
+.card3{
+    border:2px solid transparent;
+    box-shadow: #fff -2px -2px 10px -4px;
+    margin:10px;
+    width: 80%;
+    padding: 20px 50px;
+    border-radius:20px;
+    display: flex;
+
+   
+    align-items: start;
+    justify-content: space-between;
+}
+.cardd a{
+    color:#fff;
+}
+
+.cardd img{
+    
+    margin-left:-12px
+}
+
+.cardd h3{
+    margin-bottom: 10px;
+
+}
+
+.undercard img{
+    width: 450px;
+}
+
+
+
+
+
+
+.card4{
+    border:2px solid transparent;
+    box-shadow: #fff -2px -2px 10px -4px;
+    
+    width: 80%;
+    padding: 20px 50px;
+    border-radius:20px;
+    
+    text-align: left;
+    text-align: center;
+    justify-content: center;
+    margin-top:50px;
+    margin-left:9%;
+    margin-bottom:40px;
+   
+     padding:2% 23%;
+    
+}
+
+button4{
+    border: 1px solid #fff;
+    padding:10px 15px;
+    border-radius:30px;
+    cursor: pointer;
+
+}
+button4:hover{
+    color:black;
+    background-color: #fff;
+}
+
+
+
+/*********footer************/
+
+.footer{
+    margin-top:40px;
+    min-height:50vh ;
+    padding:9%;
+}
+
+.footer2{
+    display: flex;
+}
+
+.underfooter{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    text-align: left;
+    margin:10px 6%;
+    position: relative;
+    
+}
+
+.underfooter h4{
+   margin-bottom:10px;
+
+}
+
+.underfooter p{
+    margin-bottom:10px;
+    opacity: 0.5;
+}
+
+.underfooter p3{
+    opacity: 0.2;
+    margin-top:20px;
+}
+
+.underfooter p4{
+    opacity: 0.2;
+    margin-top:120px;
+}
+#imgfooter{
+     
+     position: relative;
+    
+
+
+}
+
+#imgfooter img{
+    position: absolute;
+    width:100px;
+    bottom:1%;
+    right: 1%;
+    
+}
+
+   /***************others end****************/
+
+   @media(max-width:1354px){
+    .cards{
+        gap:1%;
+        
+    }
+
+
+    
+   }
+@media(max-width:913px){
+    .card3{
+        flex-direction: column;
+    }
+
+.footer{
+    padding: 5%;
+
+}
+
+.underfooter{
+    width: 35%;
+}
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+   @media(max-width:786px)
+   {
+       .cards{
+           display: flex;
+       flex-direction: column;
+           width: 100%;
+           gap:2%
+        
+           
+       }
+   
+       .card{
+           width: 90%;
+       }
+   
+   
+   
+       .card3{
+           border:2px solid transparent;
+           box-shadow: #fff -2px -2px 10px -4px;
+           margin:10px;
+           width: 80%;
+           padding: 20px 30px;
+           border-radius:20px;
+           display: flex;
+           flex-direction: column;
+       
+          
+           align-items: start;
+           justify-content: center;
+       }
+   
+       .undercard{
+           justify-content: left;
+           text-align: left;
+           
+       }
+
+       .undercard img{
+             width: 170%;
+             margin-left:-5%;
+       }
+
+
+       .card4{
+        padding:20px 20px;
+       }
+
+       .footer{
+        padding:0.5%;
+       }
+       .underfooter{
+        display: flex;
+        flex-direction: column;
+        
+        text-align: left;
+        margin:10px 5%;
+        position: relative;
+        margin-bottom: 10px;
+        
+    }
+    
+#imgfooter img{
+    position: absolute;
+    width:100px;
+    bottom:1%;
+    right: -150%;
+    
+}
+   
+   
+   }
+
+
+
+
+
+
+
+
+
+
+
+   @media(max-width:618px){
+      .undercard img{
+     width:150%;
+      }
+
+      .footer2{
+        display: flex;
+        flex-direction: column;
+    }
+   }
+
+
+   @media(max-width:558px){
+    .undercard img{
+   width:110%;
+    }
+
+.underfooter{
+    margin-left: 50px;
+}
+
+    .underfooter img{
+        position: relative;
+        bottom:10px;
+        left:-100px
+    }
+    #imgfooter{
+       display: none;
+    }
+
+
+   
+ }
